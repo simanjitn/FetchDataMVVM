@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Orimark</string>
+
+    <string name="stringUserid">userId:- %1$s</string>
+    <string name="stringId">Id:- %1$s</string>
+    <string name="stringTitle">Title:- %1$s</string>
+    <string name="stringCompleted">Completed:- %1$s</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputid"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:hint="ID"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="5dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:background="@drawable/rectangle"/>
+
+    <Button
+        android:id="@+id/btnEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/inputid"
+        android:layout_margin="10dp"
+        android:text="Enter"
+        android:textAllCaps="false"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dataLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnEnter"
+        android:background="@drawable/rectangle"
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/userid"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="left|center"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id"
+            app:layout_constraintTop_toBottomOf="@id/userid"
+            android:gravity="left|center"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            app:layout_constraintTop_toBottomOf="@id/id"
+            android:gravity="left|center"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/completed"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            android:gravity="left|center"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
